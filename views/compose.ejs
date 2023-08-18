@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compose</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <%-include("partials/header.ejs") %>
+    <h1>Compose</h1>
+    <form action="/compose" method="post">
+    <div class="form-group">
+     <label for="composeText">Text</label>   
+    <input class="form-control" type="text" name="composeText">
+    <br>
+    <label for="composeCont">Content</label>    
+    <textarea class="form-control" name="composeCont"  cols="20" rows="5"></textarea>
+    
+</div>
+<button class="btn btn-primary" type="submit" type="button">Publish</button>
+</form>
+    <%-include("partials/footer.ejs") %>
+
+</body>
+</html>
